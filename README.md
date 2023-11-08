@@ -7,8 +7,8 @@ By James Fourie, Shaurya Gupta, Jay Patel
 
 **To do list**
 --------------
-#learn/teach git 
-#get tensorflow working
-#get tensorflow working on all machines - ask Jay and Shaurya 
-#Build first NN 11/7
-#Submit project plan 
+1. learn/teach git 
+2. #get tensorflow working
+3. get tensorflow working on all machines - ask Jay and Shaurya 
+4. #Build first NN 11/7
+5. Submit project plan 
