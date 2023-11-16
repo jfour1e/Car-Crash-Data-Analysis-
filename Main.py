@@ -18,3 +18,4 @@ df = pd.read_csv('US_Accidents_March23.csv')
 
 df1 = df.drop(['Source', 'Description', 'Country', 'Timezone', 'Airport_Code', 'Weather_Timestamp', 'Temperature(F)', 'Wind_Direction', 'Wind_Speed(mph)', 'Bump', 'Amenity', 'No_Exit', 'Give_Way', 'Railway', 'Roundabout', 'Station','Traffic_Calming', 'Turning_Loop', 'Civil_Twilight', 'Nautical_Twilight', 'Astronomical_Twilight'],axis='columns')
 print(df1.columns)
+
