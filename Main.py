@@ -17,34 +17,11 @@ import seaborn as sb
 #print(df1.columns)
 
 df = pd.read_csv('US_Accidents_March23.csv')
-#df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Street', 'City', 'County', 'State', 'Zipcode', 'Temperature(F)','Wind_Chill(F)', 'Humidity(%)','Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Crossing', 'Junction', 'Stop', 'Traffic_Signal', 'Sunrise_Sunset']]
-sevdf = df["Severity"]
-df = df.drop("Severity", axis = 1)
-x = sevdf
-y = df["Precipitation(in)"]
-plt.plot(x, y, 'o')
-plt.show()
+df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Street', 'City', 'County', 'State', 'Zipcode', 'Temperature(F)','Wind_Chill(F)', 'Humidity(%)','Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Crossing', 'Junction', 'Stop', 'Traffic_Signal', 'Sunrise_Sunset']]
 
-"""for col in df.columns:
-    y = df[col]
-    plt.plot(x, y, 'o')
-    plt.show()"""
+print(df['Start_Time'].dtype)
 
-#print(df['Start_Time'].dtype)
-
-# Plot 'Start_Time' against 'Severity'
-#plt.plot(df['Start_Time'], df['Severity'], 'o')
-
-# Add labels and title
-#plt.xlabel('Start Time')
-#plt.ylabel('Severity')
-#plt.title('Severity vs. Start Time')
-
-# Display the plot
-#plt.show()
-
-#, dtype={"fips": str})
-"""df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Street', 'City', 'County', 'State', 'Zipcode', 'Temperature(F)','Wind_Chill(F)', 'Humidity(%)','Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Crossing', 'Junction', 'Stop', 'Traffic_Signal', 'Sunrise_Sunset']]
+df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Street', 'City', 'County', 'State', 'Zipcode', 'Temperature(F)','Wind_Chill(F)', 'Humidity(%)','Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Crossing', 'Junction', 'Stop', 'Traffic_Signal', 'Sunrise_Sunset']]
 #df = pd.read_csv("C:/Users/Shaurya/Desktop/US_Accidents_March23.csv")
 
 
@@ -97,6 +74,3 @@ fig.show()
 #print(list(dfresult))
 #print(list(df))
 
-
-
-"""
