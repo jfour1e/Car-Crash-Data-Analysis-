@@ -11,8 +11,8 @@ df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_La
 df['Temperature(F)'].fillna(df['Temperature(F)'].mean(), inplace=True)
 df['Visibility(mi)'].fillna(df['Visibility(mi)'].mean(), inplace=True)
 df['Stop'] = df['Stop'].astype(int)
-# Assuming df is your DataFrame with the relevant columns
-# If Weather Condition is a categorical variable, you need to one-hot encode it
+
+#one-hot encode the weather condition column 
 df = pd.get_dummies(df, columns=['Weather_Condition'], drop_first=True)
 
 # Select relevant columns
@@ -38,5 +38,19 @@ predictions = rf_model.predict(X_test)
 # Evaluate the model
 mse = mean_squared_error(y_test, predictions)
 print(f'Mean Squared Error: {mse}')
+
+
+#Initialize a second random forest regressor 
+rf_model2 = RandomForestRegressor(n_estimators=50, random_state=42)
+
+# Train the model
+rf_model2.fit(X_train, y_train)
+
+# Make predictions on the test set
+predictions_model2 = rf_model2.predict(X_test)
+
+# Evaluate the model
+mse2 = mean_squared_error(y_test, predictions_model2)
+print(f'Mean Squared Error: {mse2}')
 
 
