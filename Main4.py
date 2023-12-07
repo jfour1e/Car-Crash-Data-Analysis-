@@ -14,7 +14,7 @@ df = pd.read_csv('US_Accidents_March23.csv')
 cond = df
 
 # Reset index while extrapolating Severity values into lists
-cond_lists = cond.groupby("Weather_Condition")["Severity"].apply(list).reset_index()
+cond_lists = cond.groupby("Weather_Condition")["Severity"].agg(list).reset_index()
 
 # Compare unique weather conditions
 conditions = cond_lists['Weather_Condition'].unique()
