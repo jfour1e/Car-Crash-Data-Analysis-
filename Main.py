@@ -10,17 +10,10 @@ import seaborn as sb
 
 #df = pd.read_csv("C:/Users/Shaurya/Desktop/US_Accidents_March23.csv")
 
-
 #import the dataset and strip off unwanted columns 
 
 df = pd.read_csv('US_Accidents_March23.csv', dtype={"fips": str})
-df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Street', 'City', 'County', 'State', 'Zipcode', 'Temperature(F)','Wind_Chill(F)', 'Humidity(%)','Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Crossing', 'Junction', 'Stop', 'Traffic_Signal', 'Sunrise_Sunset']]
-#df = pd.read_csv("C:/Users/Shaurya/Desktop/US_Accidents_March23.csv")
-
-#import the dataset and strip off unwanted columns 
-
-df = pd.read_csv('US_Accidents_March23.csv', dtype={"fips": str})
-df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Distance(mi)', 'Street', 'City', 'County', 'State', 'Zipcode', 'Temperature(F)','Wind_Chill(F)', 'Humidity(%)','Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Crossing', 'Junction', 'Stop', 'Traffic_Signal', 'Sunrise_Sunset']]
+df = df[['Severity', 'Start_Time', 'End_Time', 'Start_Lat', 'Start_Lng', 'End_Lat', 'End_Lng', 'Description', 'Distance(mi)', 'Street', 'City', 'County', 'State', 'Zipcode', 'Temperature(F)','Wind_Chill(F)', 'Humidity(%)','Pressure(in)', 'Visibility(mi)', 'Wind_Speed(mph)', 'Precipitation(in)', 'Weather_Condition', 'Crossing', 'Junction', 'Stop', 'Traffic_Signal', 'Sunrise_Sunset']]
 #df = pd.read_csv("C:/Users/Shaurya/Desktop/US_Accidents_March23.csv")
 
 

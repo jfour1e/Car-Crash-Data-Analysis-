@@ -39,7 +39,7 @@ predictions = rf_model.predict(X_test)
 mse = mean_squared_error(y_test, predictions)
 print(f'Mean Squared Error: {mse}')
 
-
+"""
 #Initialize a second random forest regressor 
 rf_model2 = RandomForestRegressor(n_estimators=50, random_state=42)
 
@@ -52,5 +52,5 @@ predictions_model2 = rf_model2.predict(X_test)
 # Evaluate the model
 mse2 = mean_squared_error(y_test, predictions_model2)
 print(f'Mean Squared Error: {mse2}')
-
+"""
 
