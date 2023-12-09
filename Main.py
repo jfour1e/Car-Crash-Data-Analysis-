@@ -61,8 +61,3 @@ fig.update_layout(
 
 fig.show()
 
-#dataplot=sb.heatmap(df.corr())
-#dfresult = df.dropna()
-#print(list(dfresult))
-#print(list(df))
-
