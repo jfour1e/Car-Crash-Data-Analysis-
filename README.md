@@ -7,18 +7,14 @@ By James Fourie, Shaurya Gupta, Jay Patel
 
 Overview
 --------
-Summary 
-features 
+Using a car crash dataset, we analyze the effect that different variables have on car crashes in the US through visual and statistical methods. This project contains the following elements: 
+
+* Density map visualization (country wide) using Plotly express. 
+* Random forest model to predict car crash severity
+* Tensorflow Keras model to predict car crash severity
+* Satistical methods comparing significance of outcomes of select columns from the dataset
 
 
-**To do list**
---------------
-1. learn/teach git 
-2. #get tensorflow working
-3. get tensorflow working on all machines - ask Jay and Shaurya 
-4. #Build first NN 11/7
-5. Submit project plan
 
 
 **Licenses**
-#figure it out 
